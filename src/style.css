@@ -51,22 +51,50 @@ section, article {
   display: flex;
   flex-direction: column; 
   position: relative;
+  font-size: 12px;
+  font-weight: 300;  
+  width: 200px;
+
+}
+
+.card--container > :nth-child(n+3):nth-child(-n+5) {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.card--main-image {
+  width: 100%;
+  border-radius: 9px;
+}
+
+.card--availability {
+  font-size: 10px;
+  font-weight: 700;
+  text-align: center;
+  padding: 5px;
+  z-index: 2;
+  background-color: white; 
+  border-radius: 8%;
+  position: absolute;
+  left: 30px;
+  top: 20px;
 }
 
 .card--star {
   width: 14px;
 }
 
-.card--main-image {
-  width: 175px;
+.card--stats {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  gap: 5px;
 }
 
-.card--availability {
-  font-size: 10px;
-  padding: 5px;
-  z-index: 2;
-  background-color: white; 
-  position: absolute;
-  left: 30px;
-  top: 20px;
+.card--localisation, .card--rating-number {
+  color: rgb(145, 142, 155);
+}
+
+.card--price {
+  font-weight: 300;
 }

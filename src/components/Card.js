@@ -5,7 +5,7 @@ export default function Card(props) {
     return (
         <article className='card--container'>
             <img className='card--main-image' src={require(`../images/${props.img}`)} alt='Swimmer'/>
-            <p className='card--availability'>SOLD OUT</p>
+            <p className='card--availability'>{props.availability}</p>
             <div className='card--stats'>
                 <img className='card--star' src={starImage} alt="star's icon"/>
                 <p className='card--rating'>{props.rating}</p>

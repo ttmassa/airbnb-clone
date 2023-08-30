@@ -5,6 +5,7 @@ import Card from './components/Card';
 import data from './data';
 
 export default function App() {
+
   const cards = data.map(element => {
     return (
       <Card 
@@ -14,15 +15,19 @@ export default function App() {
         location={element.location}
         title={element.title}
         price={element.price}
+        availability={element.availability}
       />
     );
   });
+
 
   return (
     <div>
       <Navbar />
       <Hero />
-      {cards}
+      <section className="card-list">
+        {cards}
+      </section>
     </div>
   );
 }

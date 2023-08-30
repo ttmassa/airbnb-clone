@@ -11,6 +11,7 @@ const data = [
         },
         location: "Online",
         openSpots: 0,
+        availability: "SOLD OUT"
     },
     {
         id: 2,
@@ -24,6 +25,7 @@ const data = [
         },
         location: "Online",
         openSpots: 27,
+        availability: "IN STOCK"
     },
     {
         id: 3,
@@ -37,6 +39,7 @@ const data = [
         },
         location: "Norway",
         openSpots: 3,
+        availability: "LAST PLACES"
     }
 ]
 

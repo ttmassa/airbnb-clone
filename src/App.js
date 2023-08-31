@@ -15,11 +15,10 @@ export default function App() {
         location={element.location}
         title={element.title}
         price={element.price}
-        availability={element.availability}
+        openSpots={element.openSpots}
       />
     );
   });
-
 
   return (
     <div>

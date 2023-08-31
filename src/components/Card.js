@@ -2,10 +2,18 @@ import React from 'react'
 import starImage from '../images/star-icon.png'
 
 export default function Card(props) {
+    let badgeText;
+    if (props.openSpots === 0) {
+        badgeText = "SOLD OUT";
+    } else if (props.location === "Online") {
+        badgeText = "ONLINE"
+    }
+
+
     return (
         <article className='card--container'>
             <img className='card--main-image' src={require(`../images/${props.img}`)} alt='Swimmer'/>
-            <p className='card--availability'>{props.availability}</p>
+            {badgeText && <p className='card--availability'>{badgeText}</p>}
             <div className='card--stats'>
                 <img className='card--star' src={starImage} alt="star's icon"/>
                 <p className='card--rating'>{props.rating}</p>

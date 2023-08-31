@@ -10,7 +10,7 @@ export default function App() {
     return (
       <Card 
         key={element.id}
-        element={element}
+        {...element}
       />
     );
   });
